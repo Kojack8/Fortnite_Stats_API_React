@@ -10,6 +10,7 @@ class Stats extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onValueChange = this.onValueChange.bind(this);
   }
 
   handleChange(event) {
@@ -21,23 +22,51 @@ class Stats extends React.Component {
     alert('Name: ' + this.state.value);
     event.preventDefault();
     (async () => {
-      const response = await axios.get('https://fortnite-api.com/v1/stats/br/v2',
-        {params: {name: `${this.state.value}`}}
-      );
-        
+      try {
+        const response = await axios.get('https://fortnite-api.com/v1/stats/br/v2',
+        {params: {
+          name: `${this.state.value}`, 
+          timeWindow: "season"}}
+        );
+        console.log(response);
+      } catch(err) {
+        console.error("Error response:");
+        console.error(err.response.status); 
+        console.error(err.response.data.error);    
+
+      } 
       
     
-      console.log(response)
+    
     })()
+  }
+
+  onValueChange(event) {
+    this.setState({ selectedOption: event.target.value});
   }
   
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
+        <div className="user_input">
+          <label>
+            Name:
+            <input type="text" value={this.state.value} onChange={this.handleChange} />
+          </label>
+        </div>
+        <div className="radio">
+          <label>
+            Lifetime:
+            <input type="radio" value="Lifetime" checked={this.state.selectedOption === "Lifetime"} onChange={this.onValueChange} />
+          </label>
+        </div>
+        <div className="radio">
+          <label>
+            Season:
+            <input type="radio" value="Season" checked={this.state.selectedOption === "Season"} onChange={this.onValueChange} />
+          </label>
+        </div>
+        
         <input type="submit" value="Submit" />
       </form>
     );
