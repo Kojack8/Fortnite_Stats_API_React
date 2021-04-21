@@ -26,7 +26,7 @@ class Stats extends React.Component {
         const response = await axios.get('https://fortnite-api.com/v1/stats/br/v2',
         {params: {
           name: `${this.state.value}`, 
-          timeWindow: "season"}}
+          timeWindow: `${this.state.selectedOption}`}}
         );
         console.log(response);
       } catch(err) {
@@ -40,6 +40,7 @@ class Stats extends React.Component {
     
     })()
   }
+
 
   onValueChange(event) {
     this.setState({ selectedOption: event.target.value});
@@ -57,13 +58,13 @@ class Stats extends React.Component {
         <div className="radio">
           <label>
             Lifetime:
-            <input type="radio" value="Lifetime" checked={this.state.selectedOption === "Lifetime"} onChange={this.onValueChange} />
+            <input type="radio" value="lifetime" checked={this.state.selectedOption === "lifetime"} onChange={this.onValueChange} />
           </label>
         </div>
         <div className="radio">
           <label>
             Season:
-            <input type="radio" value="Season" checked={this.state.selectedOption === "Season"} onChange={this.onValueChange} />
+            <input type="radio" value="season" checked={this.state.selectedOption === "season"} onChange={this.onValueChange} />
           </label>
         </div>
         
