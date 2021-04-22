@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './index.css';
 import ReactDOM from 'react-dom'
+import StatBlock from './statblock.js'
 
 class Stats extends React.Component {
   constructor(props) {
@@ -32,6 +33,8 @@ class Stats extends React.Component {
           timeWindow: `${this.state.selectedOption}`}}
         );
         console.log(response);
+        ReactDOM.render(<StatBlock data={response.parse}/>, document.getElementById('result'));
+        
 
       } catch(err) {
         console.error("Error response:");
@@ -54,30 +57,34 @@ class Stats extends React.Component {
   
   render() {
     return (
-      <div className="search_form">
-        Fortnite Player Search <br/>
-        Enter the Epic username you wish to search for
-        <form onSubmit={this.handleSubmit}>
-          <div className="user_input">
-            <label>
-              Name:
-              <input type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              Lifetime:
-              <input type="radio" value="lifetime" checked={this.state.selectedOption === "lifetime"}   onChange={this.onValueChange} />
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              Season:
-              <input type="radio" value="season" checked={this.state.selectedOption === "season"} onChange={this.onValueChange} />
-            </label>
-          </div>    
-          <input type="submit" value="Submit" />
-        </form>
+      <div>
+        <div className="search_form">
+          Fortnite Player Search <br/>
+          Enter the Epic username you wish to search for
+          <form onSubmit={this.handleSubmit}>
+            <div className="user_input">
+              <label>
+                Name:
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+              </label>
+            </div>
+            <div className="radio">
+              <label>
+                Lifetime:
+                <input type="radio" value="lifetime" checked={this.state.selectedOption === "lifetime"}   onChange={this.onValueChange} />
+              </label>
+            </div>
+            <div className="radio">
+              <label>
+                Season:
+                <input type="radio" value="season" checked={this.state.selectedOption === "season"} onChange={this.onValueChange} />
+              </label>
+            </div>    
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div id="result">
+        </div>
       </div>
     );
   }
