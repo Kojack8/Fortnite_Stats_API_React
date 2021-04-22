@@ -32,6 +32,7 @@ class Stats extends React.Component {
           timeWindow: `${this.state.selectedOption}`}}
         );
         console.log(response);
+
       } catch(err) {
         console.error("Error response:");
         console.error(err.response.status); 
@@ -48,6 +49,8 @@ class Stats extends React.Component {
   onValueChange(event) {
     this.setState({ selectedOption: event.target.value});
   }
+
+
   
   render() {
     return (
@@ -72,10 +75,7 @@ class Stats extends React.Component {
               Season:
               <input type="radio" value="season" checked={this.state.selectedOption === "season"} onChange={this.onValueChange} />
             </label>
-          </div>
-
-      
-          
+          </div>    
           <input type="submit" value="Submit" />
         </form>
       </div>
