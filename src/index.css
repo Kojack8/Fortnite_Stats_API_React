@@ -1,5 +1,6 @@
 body{
   text-align: center;
+  background-image: url(./assets/static/fortnite.webp);
 }
 
 .search_form{
@@ -38,3 +39,4 @@ body{
 #result5{
   display: inline-block;
 }
+

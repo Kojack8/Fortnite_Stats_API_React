@@ -70,7 +70,7 @@ class Stats extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className="containter">
         <div className="search_form">
           Fortnite Player Search <br/>
           Enter the Epic username you wish to search for
