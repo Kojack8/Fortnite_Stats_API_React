@@ -1,0 +1,43 @@
+.statTable{
+  text-align: center;
+  background-color: grey;
+  border: 5px solid black;
+  padding: 10px;
+  display: inline-block;
+  font-size: 1em;
+
+}
+
+.statRow{
+  display: table-row;
+  
+  
+
+}
+
+.statTitle{
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  display: table-cell;
+  padding: 3px 10px;
+
+
+
+
+ 
+
+}
+
+.statValue{
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  display: table-cell;
+  padding: 3px 10px;
+
+
+
+ 
+
+}

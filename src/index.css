@@ -18,3 +18,23 @@ body{
 .radio{
   float: left;
 }
+
+#result1{
+  display: inline-block;
+}
+
+#result2{
+  display: inline-block;
+}
+
+#result3{
+  display: inline-block;
+}
+
+#result4{
+  display: inline-block;
+}
+
+#result5{
+  display: inline-block;
+}

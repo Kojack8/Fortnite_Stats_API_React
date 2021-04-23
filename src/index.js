@@ -2,7 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import './index.css';
 import ReactDOM from 'react-dom'
-import StatBlock from './statblock.js'
+import DuoBlock from './duoblock.js'
+import SoloBlock from './soloblock.js'
+import TrioBlock from './trioblock.js'
+import SquadBlock from './squadblock.js'
+import OverallBlock from './totalblock.js'
 
 class Stats extends React.Component {
   constructor(props) {
@@ -32,8 +36,12 @@ class Stats extends React.Component {
           name: `${this.state.value}`, 
           timeWindow: `${this.state.selectedOption}`}}
         );
-        console.log(response.config);
-        ReactDOM.render(<StatBlock data={response}/>, document.getElementById('result'));
+        console.log(response['data']['data']['stats']['all']['duo']);
+        ReactDOM.render(<OverallBlock data={response}/>, document.getElementById('result1'));
+        ReactDOM.render(<SoloBlock data={response}/>, document.getElementById('result2'));
+        ReactDOM.render(<DuoBlock data={response}/>, document.getElementById('result3'));
+        ReactDOM.render(<TrioBlock data={response}/>, document.getElementById('result4'));
+        ReactDOM.render(<SquadBlock data={response}/>, document.getElementById('result5'));
         
 
       } catch(err) {
@@ -83,7 +91,16 @@ class Stats extends React.Component {
             <input type="submit" value="Submit" />
           </form>
         </div>
-        <div id="result">
+        <br />
+        <div id="result1">
+        </div>
+        <div id="result2">
+        </div>
+        <div id="result3">
+        </div>
+        <div id="result4">
+        </div>
+        <div id="result5">
         </div>
       </div>
     );
