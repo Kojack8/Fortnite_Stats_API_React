@@ -7,6 +7,7 @@ import SoloBlock from './soloblock.js'
 import TrioBlock from './trioblock.js'
 import SquadBlock from './squadblock.js'
 import OverallBlock from './totalblock.js'
+import ErrorMsg from './error.js'
 
 class Stats extends React.Component {
   constructor(props) {
@@ -36,18 +37,22 @@ class Stats extends React.Component {
           name: `${this.state.value}`, 
           timeWindow: `${this.state.selectedOption}`}}
         );
-        console.log(response['data']['data']['stats']['all']['duo']);
         ReactDOM.render(<OverallBlock data={response}/>, document.getElementById('result1'));
         ReactDOM.render(<SoloBlock data={response}/>, document.getElementById('result2'));
         ReactDOM.render(<DuoBlock data={response}/>, document.getElementById('result3'));
         ReactDOM.render(<TrioBlock data={response}/>, document.getElementById('result4'));
         ReactDOM.render(<SquadBlock data={response}/>, document.getElementById('result5'));
         
+        
 
       } catch(err) {
-        console.error("Error response:");
-        console.error(err.response.status); 
-        console.error(err.response.data.error);    
+        const errorStr = "Error response: " + err.response.status + " " + err.response.data.error
+        ReactDOM.render(<ErrorMsg data={errorStr} />, document.getElementById('result1'));
+        ReactDOM.render(null, document.getElementById('result2'));
+        ReactDOM.render(null, document.getElementById('result3'));
+        ReactDOM.render(null, document.getElementById('result4'));
+        ReactDOM.render(null, document.getElementById('result5'));
+  
 
       } 
       
