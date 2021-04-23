@@ -14,7 +14,7 @@ class TrioBlock extends Component {
     if (this.props.data['data']['data']['stats']['all']['trio'] !== null ) {
       return (
         <div className="statTable">
-          <p>Trio:</p>
+          Trio:
           <div className="statRow">
             <div className="statTitle">
               Score: 

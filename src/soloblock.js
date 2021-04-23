@@ -14,7 +14,7 @@ class SoloBlock extends Component {
     if (this.props.data['data']['data']['stats']['all']['solo'] !== null ) {
       return (
         <div className="statTable">
-          <p>Solo:</p>
+          Solo:
           <div className="statRow">
             <div className="statTitle">
               Score: 

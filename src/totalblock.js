@@ -14,7 +14,7 @@ class OverallBlock extends Component {
     if (this.props.data['data']['data']['stats']['all']['overall'] !== null ) {
       return (
         <div className="statTable">
-          <p>Overall:</p>
+          Overall:
           <div className="statRow">
             <div className="statTitle">
               Score: 

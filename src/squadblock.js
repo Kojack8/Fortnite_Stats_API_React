@@ -14,7 +14,7 @@ class SquadBlock extends Component {
     if (this.props.data['data']['data']['stats']['all']['squad'] !== null ) {
       return (
         <div className="statTable">
-          <p>Squad:</p>
+          Squad:
           <div className="statRow">
             <div className="statTitle">
               Score: 

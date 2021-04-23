@@ -96,7 +96,7 @@ class Stats extends React.Component {
             <input type="submit" value="Submit" />
           </form>
         </div>
-        <br />
+        <br /><br />
         <div id="result1">
         </div>
         <div id="result2">
