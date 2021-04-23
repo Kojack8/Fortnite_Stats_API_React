@@ -32,8 +32,8 @@ class Stats extends React.Component {
           name: `${this.state.value}`, 
           timeWindow: `${this.state.selectedOption}`}}
         );
-        console.log(response);
-        ReactDOM.render(<StatBlock data={response.parse}/>, document.getElementById('result'));
+        console.log(response.config);
+        ReactDOM.render(<StatBlock data={response}/>, document.getElementById('result'));
         
 
       } catch(err) {
