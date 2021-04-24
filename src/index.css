@@ -3,7 +3,7 @@ body{
   /* background-image: url(./assets/static/fortnite.webp); */
 }
 
-@media (min-width: 1px) and (max-width: 1024px) {
+@media (min-width: 1px) and (max-width: 1600px) {
   body {
     background-image: url(./assets/static/fortnite_mobile.webp);
     height:'auto';
@@ -11,7 +11,7 @@ body{
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1600px) {
   body {
     background-image: url(./assets/static/fortnite.webp);
     height:'auto';
