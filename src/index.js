@@ -96,13 +96,17 @@ class Stats extends React.Component {
         </div>
         <br /><br />
         <div id="result1">
-        </div>
+        </div> 
+        <br /><br />
         <div id="result2">
         </div>
+        <br /><br />
         <div id="result3">
         </div>
+        <br /><br />
         <div id="result4">
         </div>
+        <br /><br />
         <div id="result5">
         </div>
       </div>

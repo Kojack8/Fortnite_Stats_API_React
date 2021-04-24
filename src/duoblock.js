@@ -141,6 +141,7 @@ class DuoBlock extends Component {
             </div>
           </div>
         </div>
+        
       )}
     else {
       return null

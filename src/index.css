@@ -6,24 +6,21 @@ body{
 @media (min-width: 1px) and (max-width: 425px) {
   body {
     background-image: url(./assets/static/fortnite_mobile.webp);
-    height:'auto';
-    width:'100%';
+
   }
 }
 
 @media (min-width: 426px) and (max-width: 1024px) {
   body {
     background-image: url(./assets/static/fortnite_tablet.webp);
-    height:'auto';
-    width:'100%';
+
   }
 }
 
 @media (min-width: 1025px) {
   body {
     background-image: url(./assets/static/fortnite.webp);
-    height:'auto';
-    width:'100%';
+
  }
 }
 
