@@ -23,9 +23,9 @@ The design is currently primarily built for desktop use.
 
 ## Screenshots 
 
-<img src="./app/assets/static/Screenshot_001.webp" width="400">
-<img src="./app/assets/static/Screenshot_002.webp" width="400">
-<img src="./app/assets/static/Screenshot_003.webp" width="400">
+<img src="./src/assets/static/Screenshot_001.webp" width="400">
+<img src="./src/assets/static/Screenshot_002.webp" width="400">
+<img src="./src/assets/static/Screenshot_003.webp" width="400">
 
 
 
