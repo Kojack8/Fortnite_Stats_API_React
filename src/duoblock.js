@@ -14,7 +14,7 @@ class DuoBlock extends Component {
     if (this.props.data['data']['data']['stats']['all']['duo'] !== null ) {
       return (
         <div className="statTable">
-          Duos:
+          Duo:
           <div className="statRow">
             <div className="statTitle">
               Score: 

@@ -27,8 +27,6 @@ class Stats extends React.Component {
 
     /* https://fortnite-api.com/v1/stats/br/v2?name=Guyfierimustdie&time=lifetime */
   handleSubmit(event) {
-    alert('Name: ' + this.state.value + " Time Window = " + this.state.selectedOption);
-    
     event.preventDefault();
     (async () => {
       try {
@@ -72,8 +70,8 @@ class Stats extends React.Component {
     return (
       <div className="containter">
         <div className="search_form">
-          Fortnite Player Search <br/>
-          Enter the Epic username you wish to search for
+          <h1>Fortnite Player Search</h1>
+          <h4>Enter the Epic username you wish to search for</h4>
           <form onSubmit={this.handleSubmit}>
             <div className="user_input">
               <label>

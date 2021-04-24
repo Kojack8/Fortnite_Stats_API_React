@@ -7,11 +7,13 @@
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   background-color: #4c51f7;
+  color: white;
 
 }
 
 .statRow{
   display: table-row;
+  color: black;
   
   
 
@@ -19,7 +21,7 @@
 
 .statTitle{
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid black;
   width: 100%;
   display: table-cell;
   padding: 3px 10px;
@@ -33,7 +35,7 @@
 
 .statValue{
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid black;
   width: 100%;
   display: table-cell;
   padding: 3px 10px;
