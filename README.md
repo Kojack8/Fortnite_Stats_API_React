@@ -34,30 +34,22 @@ The design is currently primarily built for desktop use.
 ## Installation 
 
 Clone the repo to your local machine: 
-```ruby
-$ git clone https://github.com/Kojack8/Fortnite_stats_API
+```js
+$ git clone https://github.com/Kojack8/Fortnite_API_React
 ```
 Navigate to the directory containing that repo:
-```ruby
-$ cd Fortnite_stats_API/
+```js
+$ cd Fortnite_API_React/
 ```
-Install the needed gems:
-```ruby
-$ bundle install
+Install the needed dependencies:
+```js
+$ npm install
 ```
-Install webpacker:
-```
-$ rails webpacker:install
-```
-Migrate the database:
-```ruby
-$ rails db:migrate
-```
-Finally, on root path run a local server:
-```ruby
-$ rails s
+Start:
+```js
+$ npm start
 ```
 Open browser to view application:
-```ruby
+```js
 localhost:3000
 ```
