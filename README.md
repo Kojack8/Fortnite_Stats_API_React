@@ -14,7 +14,7 @@ Users are able to opt out of stat sharing, therefore, some users stats may not b
 ***
 ## Live Demo
 
-You can try it out [here](https://kojack8.github.io/Fortnite_API_React/)  
+You can try it out [here](https://kojack8.github.io/Fortnite_Stats_API_React/)  
 
 The design is currently primarily built for desktop use
 
