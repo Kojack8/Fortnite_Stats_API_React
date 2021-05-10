@@ -35,11 +35,11 @@ The design is currently primarily built for desktop use
 
 Clone the repo to your local machine: 
 ```js
-$ git clone https://github.com/Kojack8/Fortnite_API_React
+$ git clone https://github.com/Kojack8/Fortnite_Stats_API_React
 ```
 Navigate to the directory containing that repo:
 ```js
-$ cd Fortnite_API_React/
+$ cd Fortnite_Stats_API_React/
 ```
 Install the needed dependencies:
 ```js
