@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Fortnite_Stats_API_React/static/css/main.82d7a889.chunk.css",
+    "main.js": "/Fortnite_Stats_API_React/static/js/main.7beb706f.chunk.js",
+    "main.js.map": "/Fortnite_Stats_API_React/static/js/main.7beb706f.chunk.js.map",
+    "runtime-main.js": "/Fortnite_Stats_API_React/static/js/runtime-main.d9a27c88.js",
+    "runtime-main.js.map": "/Fortnite_Stats_API_React/static/js/runtime-main.d9a27c88.js.map",
+    "static/js/2.f7d6a3cd.chunk.js": "/Fortnite_Stats_API_React/static/js/2.f7d6a3cd.chunk.js",
+    "static/js/2.f7d6a3cd.chunk.js.map": "/Fortnite_Stats_API_React/static/js/2.f7d6a3cd.chunk.js.map",
+    "index.html": "/Fortnite_Stats_API_React/index.html",
+    "static/css/main.82d7a889.chunk.css.map": "/Fortnite_Stats_API_React/static/css/main.82d7a889.chunk.css.map",
+    "static/js/2.f7d6a3cd.chunk.js.LICENSE.txt": "/Fortnite_Stats_API_React/static/js/2.f7d6a3cd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Fortnite_Stats_API_React/static/media/fortnite_tablet.8748ab4b.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9a27c88.js",
+    "static/js/2.f7d6a3cd.chunk.js",
+    "static/css/main.82d7a889.chunk.css",
+    "static/js/main.7beb706f.chunk.js"
+  ]
+}
